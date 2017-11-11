@@ -10,18 +10,10 @@ import android.widget.TextView;
 
 public class MainScreen extends Activity {
 
-    Button btn = (Button)findViewById(R.id.Start);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-
-        // Example of a call to a native method
-        //TextView tv = (TextView) findViewById(R.id.sample_text);
-        //tv.setText(stringFromJNI());
-
-        //Button startButton = (Button) findViewById(R.id.Start);
     }
 
 
