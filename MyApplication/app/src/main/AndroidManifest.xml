@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".spaceO.SpaceO" />
         <activity android:name=".foogle.Foogle" />
-        <activity android:name=".Intro"></activity>
+        <activity android:name=".Intro" />
+        <activity android:name=".slidingPuzzle.BoardView"></activity>
     </application>
 
 </manifest>
