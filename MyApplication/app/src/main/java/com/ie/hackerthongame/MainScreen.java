@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 public class MainScreen extends AppCompatActivity {
 
+    Button btn = (Button)findViewById(R.id.open_activity_button);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,7 +16,17 @@ public class MainScreen extends AppCompatActivity {
     // Example of a call to a native method
     TextView tv = (TextView) findViewById(R.id.sample_text);
     tv.setText(stringFromJNI());
+
+    Button startButton = (Button) findViewById(R.id.Start);
+    startButton.setOnClickListener(new OnClickListener(){
+
+        public void onClick(View v){
+                startActivity(new Intent(activity_main_screen.this, activity_space_o.class));
+            }
+        });
     }
+
+
 
     /**
      * A native method that is implemented by the 'native-lib' native library,
