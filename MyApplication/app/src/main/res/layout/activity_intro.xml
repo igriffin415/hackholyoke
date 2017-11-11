@@ -4,34 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ie.hackerthongame.spaceO.SpaceO">
+    tools:context="com.ie.hackerthongame.Intro">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
+        <Button
+            android:id="@+id/foogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_spaceo"
-            android:textSize="11pt"
-            android:layout_marginLeft="15px"
-            android:layout_marginRight="15px"
-            android:paddingLeft="15px"
-            android:paddingRight="15px"/>
+            android:onClick="goToFoogle"
+            android:text="Foogle" />
 
         <Button
-            android:id="@+id/physicist"
+            android:id="@+id/spaceO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Physicist" />
-
-        <Button
-            android:id="@+id/astronaut"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Astronaut" />
+            android:onClick="goToSpaceO"
+            android:text="Space o" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

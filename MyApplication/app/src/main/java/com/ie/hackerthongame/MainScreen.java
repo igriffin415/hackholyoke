@@ -2,11 +2,11 @@ package com.ie.hackerthongame;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
+import com.ie.hackerthongame.foogle.Foogle;
+import com.ie.hackerthongame.spaceO.SpaceO;
 
 public class MainScreen extends Activity {
 
@@ -30,6 +30,6 @@ public class MainScreen extends Activity {
     }
 
     public void moveScreens(View view){
-        startActivity( new Intent(this, SpaceO.class));
+        startActivity( new Intent(this, Intro.class));
     }
 }

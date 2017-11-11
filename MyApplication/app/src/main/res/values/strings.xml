@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HackerthonGame</string>
+    <!--FOOGLE-->
+    <string name="welcome_foogle"> Welcome to Foogle! Are you a software or hardware enginere?</string>
+
+    <!--SPACE O-->
+    <string name="welcome_spaceo"> Welcome to SpaceO! Are you a physicist or astronaut?</string>
 </resources>
