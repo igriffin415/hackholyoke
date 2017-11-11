@@ -1,30 +1,29 @@
 package com.ie.hackerthongame;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainScreen extends AppCompatActivity {
+public class MainScreen extends Activity {
 
-    Button btn = (Button)findViewById(R.id.open_activity_button);
+    Button btn = (Button)findViewById(R.id.Start);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
 
-    // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+        // Example of a call to a native method
+        //TextView tv = (TextView) findViewById(R.id.sample_text);
+        //tv.setText(stringFromJNI());
 
-    Button startButton = (Button) findViewById(R.id.Start);
-    startButton.setOnClickListener(new OnClickListener(){
-
-        public void onClick(View v){
-                startActivity(new Intent(activity_main_screen.this, activity_space_o.class));
-            }
-        });
+        //Button startButton = (Button) findViewById(R.id.Start);
     }
+
 
 
 
@@ -33,9 +32,12 @@ public class MainScreen extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
-
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
+    }
+
+    public void moveScreens(View view){
+        startActivity( new Intent(this, SpaceO.class));
     }
 }
