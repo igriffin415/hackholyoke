@@ -19,7 +19,9 @@
         <activity android:name=".spaceO.SpaceO" />
         <activity android:name=".foogle.Foogle" />
         <activity android:name=".Intro" />
-        <activity android:name=".slidingPuzzle.BoardView"></activity>
+        <activity android:name=".slidingPuzzle.BoardView" />
+        <activity android:name=".spaceO.Biologist" />
+        <activity android:name=".spaceO.Astronaut"></activity>
     </application>
 
 </manifest>

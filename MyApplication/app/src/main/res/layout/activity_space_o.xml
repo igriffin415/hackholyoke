@@ -23,15 +23,17 @@
             android:paddingRight="15px"/>
 
         <Button
-            android:id="@+id/physicist"
+            android:id="@+id/Biologist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Physicist" />
+            android:onClick="goToBiologist"
+            android:text="Biologist" />
 
         <Button
             android:id="@+id/astronaut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goToAstronaut"
             android:text="Astronaut" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
