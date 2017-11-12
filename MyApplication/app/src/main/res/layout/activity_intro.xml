@@ -17,10 +17,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15px"
             android:layout_marginRight="15px"
+            android:justificationMode="inter_word"
             android:paddingLeft="15px"
             android:paddingRight="15px"
             android:text="This should never be seen"
-            android:textAlignment="center"
             android:textSize="9pt" />
 
         <LinearLayout

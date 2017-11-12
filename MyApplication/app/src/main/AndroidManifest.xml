@@ -23,7 +23,8 @@
         <activity android:name=".spaceO.Biologist" />
         <activity android:name=".spaceO.Astronaut" />
         <activity android:name=".foogle.Software" />
-        <activity android:name=".foogle.Hardware"></activity>
+        <activity android:name=".foogle.Hardware" />
+        <activity android:name=".End"></activity>
     </application>
 
 </manifest>

@@ -23,7 +23,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="96dp" />
+            android:layout_height="45dp" />
 
         <TextView
             android:id="@+id/hardwareIssue"
@@ -35,14 +35,14 @@
             android:paddingLeft="15px"
             android:paddingRight="15px"
             android:text="@string/hardware_problem"
-            android:textSize="11pt" />
+            android:textSize="9pt" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/go"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="puzzel"
-            android:text="Button" />
+            android:text="Go" />
     </LinearLayout>
 
 

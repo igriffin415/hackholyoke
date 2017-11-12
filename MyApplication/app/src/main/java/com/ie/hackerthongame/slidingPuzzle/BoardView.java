@@ -2,7 +2,9 @@ package com.ie.hackerthongame.slidingPuzzle;
 
 import java.util.Iterator;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -14,7 +16,9 @@ import android.graphics.Picture;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.ie.hackerthongame.End;
 import com.ie.hackerthongame.R;
+import com.ie.hackerthongame.foogle.Hardware;
 import com.ie.hackerthongame.slidingPuzzle.board.Board;
 import com.ie.hackerthongame.slidingPuzzle.board.Place;
 
@@ -39,6 +43,8 @@ public class BoardView extends View {
     /** the screen's height */
     private float screenHeight;
 
+    Context context;
+
     /** The job */
     String job;
 
@@ -54,6 +60,7 @@ public class BoardView extends View {
         this.board.addBoardChangeListener(boardChangeListener);
         this.board.rearrange();
         this.job = job;
+        this.context = context;
         setFocusable(true);
         setFocusableInTouchMode(true);
     }
@@ -158,8 +165,7 @@ public class BoardView extends View {
         public void tileSlid(Place from, Place to, int numOfMoves) {
         }
 
-        public void solved(int numOfMoves) {
-            System.out.println("win");
+        public void solved(int numOfMoves) { context.startActivity( new Intent(context, End.class));
         }
     };
 }

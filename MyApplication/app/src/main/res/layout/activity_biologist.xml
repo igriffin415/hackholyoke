@@ -26,22 +26,22 @@
             android:layout_height="36dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/bioIssue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/biology_problem"
-            android:background="@color/text_background"
-            android:textSize="11pt"
             android:layout_marginLeft="15px"
             android:layout_marginRight="15px"
+            android:background="@color/text_background"
             android:paddingLeft="15px"
-            android:paddingRight="15px" />
+            android:paddingRight="15px"
+            android:text="@string/biology_problem"
+            android:textSize="9pt" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/go"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="puzzel"
-            android:text="Button" />
+            android:text="go" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
