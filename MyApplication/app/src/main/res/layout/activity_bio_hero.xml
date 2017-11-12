@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="182dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/suzanne1"
+                android:src="@drawable/suzanne1"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="299dp" />
 
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/suzanne"
+                android:src="@drawable/suzanne"
                 tools:layout_editor_absoluteX="231dp"
                 tools:layout_editor_absoluteY="314dp" />
 

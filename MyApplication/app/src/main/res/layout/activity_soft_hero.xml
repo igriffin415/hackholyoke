@@ -28,7 +28,7 @@
             android:id="@+id/imageView9"
             android:layout_width="match_parent"
             android:layout_height="249dp"
-            app:srcCompat="@drawable/ada" />
+            app:srcCompat="@drawable/adapixel" />
 
         <Button
             android:layout_width="match_parent"
