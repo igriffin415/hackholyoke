@@ -13,4 +13,4 @@ Welcome ot the world of STEM. You're a young woman just entering the field. Choo
 
 ## Acknowledgments
 
-* Caiolope's [Sliding Tile Puzzle] (https://github.com/caiolopes/Sliding-Tile-Puzzle)
+* Caiolope's [Sliding Tile Puzzle](https://github.com/caiolopes/Sliding-Tile-Puzzle)
