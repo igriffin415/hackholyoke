@@ -7,26 +7,22 @@
     tools:context="com.ie.hackerthongame.hardwareHero">
 
     <LinearLayout
-        android:layout_width="367dp"
-        android:layout_height="496dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="7dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yoky Matsuoka"
-            android:textSize="36sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:text="Yoky Matsuko"
+            android:textSize="36px" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yoky Matsuoka (born c. 1972 in Japan) is the former Vice President of Technology at Nest, where she was in charge of UX  and the learning aspects of Nest's thermostat. In 2016, she was working at Apple, but has since returned to Nest as Chief Technology Officer.  Previously, she was an assistant professor at Carnegie Mellon University and an associate professor of Computer Science and Engineering at the University of Washington, director of that university's Neurobotics Laboratory, director of the Center for Sensorimotor Neural Engineering. She is a 2007 MacArthur Fellow, commonly referred to as Genius Award. At UW, her research combined neuroscience and robotics—sometimes referred to by Matsuoka by the portmanteau neurobotics—to create more realistic prosthetics." />
+            android:text="@string/yoky" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,24 +31,17 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="437dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/yoky" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Next" />
-            </LinearLayout>
-
+                android:text="Next" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

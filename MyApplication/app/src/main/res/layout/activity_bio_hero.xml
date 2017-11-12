@@ -27,6 +27,7 @@
             android:id="@+id/discript"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="5pt"
             android:paddingHorizontal="10dp"
             android:text="Suzanne Cory is a distinguished Australian molecular biologist. She has worked on the genetics of the immune system and cancer and has lobbied her country to invest in science."
             tools:layout_editor_absoluteX="16dp"
@@ -35,7 +36,7 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="158dp"
+            android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
             android:text="&quot;I think what drives scientists is this tremendous intellectual adventure - pushing the boundaries of knowledge, walking down a track that nobody has walked down before, not knowing what's around the corner and then seeing a landscape that is so extraordinarily beautiful and complex, being part of the community that is driving the boundaries of knowledge and giving us insight into the amazing process of life.&quot; \n ~ Suzanne Cory"
             tools:layout_editor_absoluteX="16dp"
@@ -48,19 +49,19 @@
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="206dp"
+                android:layout_width="wrap_content"
                 android:layout_height="182dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/suzanne1"
+                android:src="@drawable/suzanne1"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="299dp" />
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="137dp"
-                android:layout_height="167dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/suzanne"
+                android:src="@drawable/suzanne"
                 tools:layout_editor_absoluteX="231dp"
                 tools:layout_editor_absoluteY="314dp" />
 
