@@ -21,7 +21,9 @@
         <activity android:name=".Intro" />
         <activity android:name=".slidingPuzzle.BoardView" />
         <activity android:name=".spaceO.Biologist" />
-        <activity android:name=".spaceO.Astronaut"></activity>
+        <activity android:name=".spaceO.Astronaut" />
+        <activity android:name=".foogle.Software" />
+        <activity android:name=".foogle.Hardware"></activity>
     </application>
 
 </manifest>

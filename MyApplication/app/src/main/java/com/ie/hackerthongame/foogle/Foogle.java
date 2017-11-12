@@ -16,4 +16,17 @@ public class Foogle extends AppCompatActivity {
         setContentView(R.layout.activity_foogle);
     }
 
+    @Override
+    public void onBackPressed() {
+        // Do Here what ever you want do on back press;
+    }
+
+    public void goToHardware(View view) {
+        startActivity( new Intent(this, Hardware.class));
+    }
+
+    public void goToSoftware(View view) {
+        startActivity( new Intent(this, Software.class));
+    }
+
 }

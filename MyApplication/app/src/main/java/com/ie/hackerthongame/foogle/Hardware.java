@@ -1,6 +1,5 @@
-package com.ie.hackerthongame.spaceO;
+package com.ie.hackerthongame.foogle;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,10 +7,8 @@ import android.view.ViewGroup;
 
 import com.ie.hackerthongame.R;
 import com.ie.hackerthongame.slidingPuzzle.BoardView;
-import com.ie.hackerthongame.slidingPuzzle.board.Board;
 
-public class Astronaut extends Activity {
-
+public class Hardware extends AppCompatActivity {
     /** The main view. */
     private ViewGroup mainView;
 
@@ -21,8 +18,8 @@ public class Astronaut extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_astronaut);
-        mainView = (ViewGroup) findViewById(R.id.astroLayout);
+        setContentView(R.layout.activity_hardware);
+        mainView = (ViewGroup) findViewById(R.id.hardLayout);
     }
 
     @Override
@@ -32,7 +29,7 @@ public class Astronaut extends Activity {
 
     public void puzzel(View view){
         this.mainView.removeView(boardView);
-        this.boardView = new BoardView(this, "astronaut");
+        this.boardView = new BoardView(this, "hardware");
         this.mainView.addView(boardView);
     }
 }

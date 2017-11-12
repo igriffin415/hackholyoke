@@ -17,6 +17,11 @@ public class Intro extends Activity {
         setContentView(R.layout.activity_intro);
     }
 
+    @Override
+    public void onBackPressed() {
+        // Do Here what ever you want do on back press;
+    }
+
     public void goToSpaceO(View view){
         //go to spaceO
         startActivity( new Intent(this, SpaceO.class));

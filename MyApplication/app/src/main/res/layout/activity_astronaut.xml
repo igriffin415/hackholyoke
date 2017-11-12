@@ -4,14 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/astroLayout"
     tools:context="com.ie.hackerthongame.spaceO.Astronaut">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:id="@+id/planets"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/planets"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/planets" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/astroIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:background="@color/text_background"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:text="@string/astronaut_problem"
+            android:textSize="11pt" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="puzzel"
+            android:text="Button" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

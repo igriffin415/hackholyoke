@@ -1,8 +1,19 @@
 <resources>
     <string name="app_name">HackerthonGame</string>
-    <!--FOOGLE-->
+    <string name="welcome_text">Welcome to\n Ada Lovelace!</string>
+    <!-- *** FOOGLE *** -->
     <string name="welcome_foogle"> Welcome to Foogle! Are you a software or hardware enginere?</string>
+    <!--SOFTWARE-->
+    <string name="software_problem">We need software :^( </string>
+    <!--HARDWARE-->
+    <string name="hardware_problem">We need hardware :^( </string>
 
-    <!--SPACE O-->
+
+    <!-- *** SPACE O ***-->
     <string name="welcome_spaceo"> Welcome to SpaceO! Are you a physicist or astronaut?</string>
+    <!--BIOLOGIST-->
+    <string name="biology_problem">Fix this planet :^(</string>
+    <!--ASTRONAUT-->
+    <string name="astronaut_problem">build the spaceship!</string>
+    <string name="title_activity_software">Software</string>
 </resources>

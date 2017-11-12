@@ -1,29 +1,17 @@
 package com.ie.hackerthongame;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 
-import com.ie.hackerthongame.slidingPuzzle.BoardView;
-import com.ie.hackerthongame.slidingPuzzle.board.Board;
 
 public class MainScreen extends Activity {
-
-    /** The main view. */
-    private ViewGroup mainView;
-
-    /** The game board. */
-    private Board board;
-
-    /** The board view that generates the tiles and lines using 2-D graphics. */
-    private BoardView boardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-        mainView = (ViewGroup) findViewById(R.id.mainLayout);
     }
 
 
@@ -39,10 +27,5 @@ public class MainScreen extends Activity {
         System.loadLibrary("native-lib");
     }
 
-    public void moveScreens(View view){
-        this.mainView.removeView(boardView);
-        this.boardView = new BoardView(this, "biologist");
-        this.mainView.addView(boardView);
-//        startActivity( new Intent(this, BoardView.class));
-    }
+    public void toIntro(View view){ startActivity( new Intent(this, Intro.class)); }
 }
