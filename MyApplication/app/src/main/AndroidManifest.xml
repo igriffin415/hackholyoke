@@ -26,7 +26,8 @@
         <activity android:name=".foogle.Hardware" />
         <activity android:name=".End" />
         <activity android:name=".bioHero" />
-        <activity android:name=".hardwareHero"></activity>
+        <activity android:name=".hardwareHero" />
+        <activity android:name=".astroHero"></activity>
     </application>
 
 </manifest>
