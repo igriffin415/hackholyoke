@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ie.hackerthongame.R;
+import com.ie.hackerthongame.hardwareHero;
 import com.ie.hackerthongame.helperFiles.Story;
-import com.ie.hackerthongame.spaceO.SpaceO;
 
 public class Foogle extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class Foogle extends AppCompatActivity {
     public void onBackPressed() {/* we only move forward. */ }
 
     public void goToHardware(View view) {
-        startActivity( new Intent(this, Hardware.class));
+        startActivity( new Intent(this, hardwareHero.class));
     }
 
     public void goToSoftware(View view) {
