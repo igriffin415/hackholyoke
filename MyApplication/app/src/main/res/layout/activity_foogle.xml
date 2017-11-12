@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.ie.hackerthongame.foogle.Foogle">
 
+    <ImageView
+        android:id="@+id/foogleRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/foogleroom" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,12 +23,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15px"
             android:layout_marginRight="15px"
-            android:fontFamily="monospace"
             android:justificationMode="inter_word"
             android:paddingLeft="15px"
             android:paddingRight="15px"
+            android:background="@color/text_background"
             android:text="@string/welcome_foogle"
-            android:textSize="8pt" />
+            android:textSize="9pt" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,7 +40,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
                 android:onClick="goToHardware"
                 android:text="Hardware" />
 
@@ -43,7 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
                 android:onClick="goToSoftware"
                 android:text="Software" />
         </LinearLayout>

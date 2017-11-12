@@ -6,4 +6,5 @@
     <color name="tile_color">#000000</color>
     <color name="board_color">#000000</color>
     <color name="text_background">#ffffff</color>
+    <color name="sky">#73A2FF</color>
 </resources>

@@ -21,6 +21,7 @@
             android:justificationMode="inter_word"
             android:paddingLeft="15px"
             android:paddingRight="15px"
+            android:background="@color/text_background"
             android:text="@string/welcome_spaceo"
             android:textSize="8pt" />
 
