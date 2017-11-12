@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ie.hackerthongame.R;
+import com.ie.hackerthongame.bioHero;
 import com.ie.hackerthongame.helperFiles.Story;
 
 public class SpaceO extends Activity {
@@ -40,7 +41,7 @@ public class SpaceO extends Activity {
     public void onBackPressed() {/* we only move forward. */ }
 
     public void goToBiologist(View view) {
-        startActivity( new Intent(this, Biologist.class));
+        startActivity( new Intent(this, bioHero.class));
     }
 
     public void goToAstronaut(View view) {
