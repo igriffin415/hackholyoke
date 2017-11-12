@@ -25,6 +25,8 @@ import com.ie.hackerthongame.slidingPuzzle.board.Place;
  * @version 1.0 $
  */
 public class BoardView extends View {
+    /** board size */
+    private int boardSize =3;
 
     /** The board. */
     private Board board;
@@ -34,6 +36,8 @@ public class BoardView extends View {
 
     /** The height. */
     private float height;
+    /** the screen's height */
+    private float screenHeight;
 
     /** The job */
     String job;
@@ -62,7 +66,8 @@ public class BoardView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         this.width = w / this.board.size();
-        this.height = h / this.board.size();
+        this.height = w / this.board.size();
+        this.screenHeight = h;
         super.onSizeChanged(w, h, oldw, oldh);
     }
 
@@ -76,8 +81,10 @@ public class BoardView extends View {
      * @return the place
      */
     private Place locatePlace(float x, float y) {
+        System.out.println(x+" "+y);
         int ix = (int) (x / width);
         int iy = (int) (y / height);
+        System.out.println(ix +" " + iy);
 
         return board.at(ix + 1, iy + 1);
     }
@@ -92,6 +99,7 @@ public class BoardView extends View {
         if (event.getAction() != MotionEvent.ACTION_DOWN)
             return super.onTouchEvent(event);
         Place p = locatePlace(event.getX(), event.getY());
+
         if (p != null && p.slidable() && !board.solved()) {
             p.slide();
             invalidate();
@@ -114,12 +122,6 @@ public class BoardView extends View {
         dark.setColor(getResources().getColor(R.color.tile_color));
         dark.setStrokeWidth(15);
 
-        // Draw the major grid lines
-        for (int i = 0; i < this.board.size(); i++) {
-            canvas.drawLine(0, i * height, getWidth(), i * height, dark);
-            canvas.drawLine(i * width, 0, i * width, getHeight(), dark);
-        }
-
         Paint foreground = new Paint(Paint.ANTI_ALIAS_FLAG);
         foreground.setColor(getResources().getColor(R.color.tile_color));
         foreground.setStyle(Style.FILL);
@@ -136,16 +138,15 @@ public class BoardView extends View {
             for (int j = 0; j < board.size(); j++) {
                 if (it.hasNext()) {
                     Place p = it.next();
-                    if (p.hasTile()) {
-                        Rect spot = new Rect((int)(i * width), (int)(j * height),
-                                (int)(i * width + width), (int)(j * height + height));
+                    Rect spot = new Rect((int)(i * width), (int)(j * height),
+                            (int)(i * width + width ), (int)(j * height + height));
+                    if (p.hasTile()){
                         int resId = getResources().getIdentifier(job+(p.getTile().number()),"drawable", "com.ie.hackerthongame");
 
                         Bitmap b = BitmapFactory.decodeResource(getResources(), resId);
                         canvas.drawBitmap(b, null, spot,null);
                     } else {
-                        canvas.drawRect(i * width, j * height, i * width
-                                + width, j * height + height, dark);
+                        canvas.drawRect(spot, dark);
                     }
                 }
             }
