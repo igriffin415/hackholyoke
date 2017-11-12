@@ -7,7 +7,7 @@ Welcome ot the world of STEM. You're a young woman just entering the field. Choo
 
 ## Authors
 
-* **Isabelle Griffin***
+* **Isabelle Griffin**
 * **Emma Grotto**
 
 
