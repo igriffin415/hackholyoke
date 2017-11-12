@@ -1,5 +1,6 @@
 package com.ie.hackerthongame;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.view.View;
 
 import com.ie.hackerthongame.spaceO.Biologist;
 
-public class bioHero extends AppCompatActivity {
+public class bioHero extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
