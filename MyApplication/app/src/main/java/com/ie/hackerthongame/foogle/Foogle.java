@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.ie.hackerthongame.R;
 import com.ie.hackerthongame.helperFiles.Story;
+import com.ie.hackerthongame.softHero;
 import com.ie.hackerthongame.spaceO.SpaceO;
 
 public class Foogle extends AppCompatActivity {
@@ -45,8 +46,8 @@ public class Foogle extends AppCompatActivity {
         startActivity( new Intent(this, Hardware.class));
     }
 
-    public void goToSoftware(View view) {
-        startActivity( new Intent(this, Software.class));
+    public void goToAda(View view) {
+        startActivity( new Intent(this, softHero.class));
     }
 
     @Override
