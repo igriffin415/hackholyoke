@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class Story {
 
+    //checks to make sure that the current index is valid, then either:
+    //adds to text or shows buttons
     public static void progressStory(String[] storyCont, TextView story, int count, Button[] buttons){
         String text = (String) story.getText();
         if(count < storyCont.length)

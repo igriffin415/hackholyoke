@@ -28,6 +28,7 @@ public class Foogle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foogle);
 
+        //create and hide buttons && initialize text
         hardware = (Button) findViewById(R.id.hardware);
         software = (Button) findViewById(R.id.software);
         foogle = (TextView) findViewById(R.id.foogle);
@@ -52,6 +53,7 @@ public class Foogle extends AppCompatActivity {
     public boolean onTouchEvent(MotionEvent event) {
         if (event.getAction() != MotionEvent.ACTION_DOWN)
             return super.onTouchEvent(event);
+        //function lets you tap through until end of text
         Story.progressStory(storyCont, foogle, count, new Button[] {hardware, software});
         count++;
         return true;

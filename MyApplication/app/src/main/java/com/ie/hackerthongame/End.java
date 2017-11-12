@@ -11,4 +11,7 @@ public class End extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
     }
+
+    @Override
+    public void onBackPressed() {/* we only move forward. */ }
 }

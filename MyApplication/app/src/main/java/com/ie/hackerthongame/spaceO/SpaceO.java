@@ -27,6 +27,7 @@ public class SpaceO extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_space_o);
 
+        //create and hide button(s) && initialize text
         bio = (Button) findViewById(R.id.bio);
         astro = (Button) findViewById(R.id.astronaut);
         spaceO = (TextView) findViewById(R.id.spaceO);

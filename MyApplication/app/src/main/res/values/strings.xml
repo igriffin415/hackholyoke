@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">HackerthonGame</string>
     <string name="welcome_text">Welcome to\n Ada Lovelace!</string>
+    <string name="end">Congratulations you won!</string>
     <!-- *** FOOGLE *** -->
     <string name="welcome_foogle"> Welcome to Foogle! Are you a software or hardware enginere?</string>
     <!--SOFTWARE-->

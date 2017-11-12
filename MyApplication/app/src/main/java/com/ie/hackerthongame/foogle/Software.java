@@ -32,6 +32,7 @@ public class Software extends AppCompatActivity {
         setContentView(R.layout.activity_software);
         mainView = (ViewGroup) findViewById(R.id.softLayout);
 
+        //create and hide button(s) && initialize text
         go = (Button) findViewById(R.id.go);
         issue = (TextView) findViewById(R.id.softwareIssue);
         go.setVisibility(View.GONE);

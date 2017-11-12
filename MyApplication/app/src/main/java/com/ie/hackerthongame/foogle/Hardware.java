@@ -32,6 +32,7 @@ public class Hardware extends AppCompatActivity {
         setContentView(R.layout.activity_hardware);
         mainView = (ViewGroup) findViewById(R.id.hardLayout);
 
+        //create and hide button(s) && initialize text
         go = (Button) findViewById(R.id.go);
         issue = (TextView) findViewById(R.id.hardwareIssue);
         go.setVisibility(View.GONE);

@@ -32,6 +32,7 @@ public class Biologist extends AppCompatActivity {
         setContentView(R.layout.activity_biologist);
         mainView = (ViewGroup) findViewById(R.id.bioLayout);
 
+        //create and hide button(s) && initialize text
         go = (Button) findViewById(R.id.go);
         issue = (TextView) findViewById(R.id.bioIssue);
         go.setVisibility(View.GONE);

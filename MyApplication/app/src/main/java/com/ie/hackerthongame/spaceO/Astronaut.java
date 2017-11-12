@@ -35,6 +35,7 @@ public class Astronaut extends Activity {
         setContentView(R.layout.activity_astronaut);
         mainView = (ViewGroup) findViewById(R.id.astroLayout);
 
+        //create and hide button(s) && initialize text
         go = (Button) findViewById(R.id.go);
         issue = (TextView) findViewById(R.id.astroIssue);
         go.setVisibility(View.GONE);
