@@ -47,16 +47,17 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/sally" />
 
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goToAstronaut"
+                android:text="Next"
+                tools:layout_editor_absoluteY="320dp" />
+
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="goToAstronaut"
-            android:text="Next"
-            tools:layout_editor_absoluteY="320dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
