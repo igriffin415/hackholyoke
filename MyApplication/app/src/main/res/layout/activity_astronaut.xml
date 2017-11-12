@@ -32,15 +32,17 @@
             android:layout_marginLeft="15px"
             android:layout_marginRight="15px"
             android:background="@color/text_background"
+            android:fontFamily="monospace"
             android:paddingLeft="15px"
             android:paddingRight="15px"
             android:text="@string/astronaut_problem"
-            android:textSize="9pt" />
+            android:textSize="8pt" />
 
         <Button
             android:id="@+id/go"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:onClick="puzzel"
             android:text="go" />
     </LinearLayout>

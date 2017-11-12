@@ -20,9 +20,10 @@
             android:id="@+id/welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="@string/welcome_text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textAlignment="center"
+            android:textSize="18pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -42,6 +43,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="91dp"
                 android:layout_weight="1"
+                android:fontFamily="monospace"
                 android:onClick="toIntro"
                 android:text="Start" />
 
