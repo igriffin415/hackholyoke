@@ -18,7 +18,7 @@ public class hardwareHero extends AppCompatActivity {
     @Override
     public void onBackPressed() {/* we only move forward. */ }
 
-    public void goToBiologist(View view) {
+    public void goToHardware(View view) {
         startActivity( new Intent(this, Hardware.class));
     }
 }
