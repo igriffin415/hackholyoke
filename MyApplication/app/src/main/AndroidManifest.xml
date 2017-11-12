@@ -27,7 +27,8 @@
         <activity android:name=".End" />
         <activity android:name=".bioHero" />
         <activity android:name=".hardwareHero" />
-        <activity android:name=".astroHero"></activity>
+        <activity android:name=".astroHero" />
+        <activity android:name=".softHero"></activity>
     </application>
 
 </manifest>
