@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ie.hackerthongame.R;
+import com.ie.hackerthongame.astroHero;
 import com.ie.hackerthongame.bioHero;
 import com.ie.hackerthongame.helperFiles.Story;
 
@@ -45,7 +46,7 @@ public class SpaceO extends Activity {
     }
 
     public void goToAstronaut(View view) {
-        startActivity( new Intent(this, Astronaut.class ));
+        startActivity( new Intent(this, astroHero.class ));
     }
 
     @Override
