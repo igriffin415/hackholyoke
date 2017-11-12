@@ -26,35 +26,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="On June 18, 1983, Sally Ride became the first American woman to fly in space. She was an astronaut on a space shuttle mission. Her job was to work the robotic arm. She used the arm to help put satellites into space. She flew on the space shuttle again in 1984.  \n After flying twice on the Orbiter Challenger, she left NASA in 1987. She worked for two years at Stanford University's Center for International Security and Arms Control, then at the University of California, San Diego as a professor of physics, primarily researching nonlinear optics and Thomson scattering. She served on the committees that investigated the Challenger and Columbia space shuttle disasters, the only person to participate in both." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="10dp"
-            android:text='"So I saw many planets, and they looked just a little bit brighter than they do from Earth. " ~ Sally Ride' />
+            android:text="@string/sally" />
 
         <LinearLayout
-            android:layout_width="404dp"
-            android:layout_height="152dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="249dp"
-                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/sally" />
 
-            <Button
-                android:id="@+id/button2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="goToAstronaut"
-                android:text="Next"
-                tools:layout_editor_absoluteY="320dp" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/sally_quote" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goToAstronaut"
+                    android:text="Next"
+                    tools:layout_editor_absoluteY="320dp" />
+            </LinearLayout>
 
         </LinearLayout>
 

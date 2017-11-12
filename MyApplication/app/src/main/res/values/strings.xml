@@ -6,6 +6,12 @@
     <string name="welcome_foogle"> Welcome to Foogle! Are you a software or hardware enginere?</string>
     <!--SOFTWARE-->
     <string name="software_problem">We need software :^( </string>
+    <string name="ada">Augusta Ada King-Noel, Countess of Lovelace (10 December 1815 – 27 November 1852) was an English mathematician and writer,
+        chiefly known for her work on Charles Babbage\'s proposed mechanical general-purpose computer, the Analytical Engine. She was the first to
+        recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such
+        a machine.</string>
+    <string name="ada_two">As a result, she is often regarded as the first to recognise the full potential of a \"computing machine\" and the first
+        computer programmer</string>
     <!--HARDWARE-->
     <string name="hardware_problem">We need hardware :^( </string>
     <string name="yoky">Yoky Matsuoka (born c. 1972 in Japan) is the former Vice President of Technology at Nest, where she was in charge of UX  and the learning aspects of Nest\'s thermostat. In 2016, she was working at Apple, but has since returned to Nest as Chief Technology Officer.  Previously, she was an assistant professor at Carnegie Mellon University and an associate professor of Computer Science and Engineering at the University of Washington, director of that university\'s Neurobotics Laboratory, director of the Center for Sensorimotor Neural Engineering. She is a 2007 MacArthur Fellow, commonly referred to as Genius Award. At UW, her research combined neuroscience and robotics—sometimes referred to by Matsuoka by the portmanteau neurobotics—to create more realistic prosthetics.</string>
@@ -18,4 +24,10 @@
     <!--ASTRONAUT-->
     <string name="astronaut_problem">build the spaceship!</string>
     <string name="title_activity_software">Software</string>
+    <string name="sally">On June 18, 1983, Sally Ride became the first American woman to fly in space. Her job was to work the robotic arm to help put
+        satellites into space. She flew on the space shuttle again in 1984. She left NASA in 1987. She worked for two years at Stanford University\'s Center for International
+        Security and Arms Control, then at the University of California, San Diego as a professor of physics, researching nonlinear optics and
+        Thomson scattering. She served on the committees that investigated the Challenger and Columbia space shuttle disasters, the only person to
+        participate in both.</string>
+    <string name="sally_quote">\"So I saw many planets, and they looked just a little bit brighter than they do from Earth. \" ~ Sally Ride</string>
 </resources>
