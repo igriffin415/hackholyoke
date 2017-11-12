@@ -24,7 +24,8 @@
         <activity android:name=".spaceO.Astronaut" />
         <activity android:name=".foogle.Software" />
         <activity android:name=".foogle.Hardware" />
-        <activity android:name=".End"></activity>
+        <activity android:name=".End" />
+        <activity android:name=".bioHero"></activity>
     </application>
 
 </manifest>
