@@ -3,10 +3,14 @@ package com.ie.hackerthongame.slidingPuzzle;
 import java.util.Iterator;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Paint.FontMetrics;
 import android.graphics.Paint.Style;
+import 	android.graphics.Rect;
+import android.graphics.Picture;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -31,19 +35,21 @@ public class BoardView extends View {
     /** The height. */
     private float height;
 
+    /** The job */
+    String job;
+
     /**
      * Instantiates a new board view.
      *
      * @param context
      *            the context
-     * @param board
-     *            the board
      */
-    public BoardView(Context context) {
+    public BoardView(Context context, String job) {
         super(context);
         this.board = new Board(3);
         this.board.addBoardChangeListener(boardChangeListener);
         this.board.rearrange();
+        this.job = job;
         setFocusable(true);
         setFocusableInTouchMode(true);
     }
@@ -131,9 +137,12 @@ public class BoardView extends View {
                 if (it.hasNext()) {
                     Place p = it.next();
                     if (p.hasTile()) {
-                        String number = Integer.toString(p.getTile().number());
-                        canvas.drawText(number, i * width + x, j * height + y,
-                                foreground);
+                        Rect spot = new Rect((int)(i * width), (int)(j * height),
+                                (int)(i * width + width), (int)(j * height + height));
+                        int resId = getResources().getIdentifier(job+(p.getTile().number()),"drawable", "com.ie.hackerthongame");
+
+                        Bitmap b = BitmapFactory.decodeResource(getResources(), resId);
+                        canvas.drawBitmap(b, null, spot,null);
                     } else {
                         canvas.drawRect(i * width, j * height, i * width
                                 + width, j * height + height, dark);

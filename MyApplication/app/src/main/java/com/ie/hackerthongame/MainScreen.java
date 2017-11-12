@@ -1,15 +1,12 @@
 package com.ie.hackerthongame;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ie.hackerthongame.foogle.Foogle;
 import com.ie.hackerthongame.slidingPuzzle.BoardView;
 import com.ie.hackerthongame.slidingPuzzle.board.Board;
-import com.ie.hackerthongame.spaceO.SpaceO;
 
 public class MainScreen extends Activity {
 
@@ -44,7 +41,7 @@ public class MainScreen extends Activity {
 
     public void moveScreens(View view){
         this.mainView.removeView(boardView);
-        this.boardView = new BoardView(this);
+        this.boardView = new BoardView(this, "biologist");
         this.mainView.addView(boardView);
 //        startActivity( new Intent(this, BoardView.class));
     }
