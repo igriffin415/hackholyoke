@@ -22,18 +22,27 @@
             android:paddingLeft="15px"
             android:paddingRight="15px"/>
 
-        <Button
-            android:id="@+id/Biologist"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goToBiologist"
-            android:text="Biologist" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/astronaut"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goToAstronaut"
-            android:text="Astronaut" />
+            <Button
+                android:id="@+id/Biologist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goToBiologist"
+                android:text="Biologist" />
+
+            <Button
+                android:id="@+id/astronaut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goToAstronaut"
+                android:text="Astronaut" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
